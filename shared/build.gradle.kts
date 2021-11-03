@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 val ktor_version = "1.6.4"
-val coroutineVersion = "1.4.2"
+val coroutineVersion = "1.5.2"
 
 plugins {
     kotlin("multiplatform")
@@ -50,7 +50,7 @@ kotlin {
         val androidMain by getting{
             dependencies {
                 implementation("io.ktor:ktor-client-android:$ktor_version")
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
+                //implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
             }
         }
         val androidTest by getting {
