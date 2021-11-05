@@ -20,73 +20,237 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		648F16425FEF89525AE0325F5A984B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8749C8E8DC500B064FA0BC7A78C38A2A /* Pods-iosApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2475209BEE7612101900020629C625 /* Pods-iosApp-dummy.m */; };
-		8801CBFD38B946597BD07145B2EEFC9F /* Pods-iosApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DE4C0106600A5B6D599285368F3270 /* Pods-iosApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		002BB16881EB1D630D220E8A3F2A6F86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		007C9A543732751B48478BE901D9C2E6 /* KVStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6555305DE181628BE35F8280705C4 /* KVStorage.swift */; };
+		00C3BA6E998766F4D4B2C7D576D6BA15 /* DeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D67D7D7E0CBDE9999E9FF44A588DF6 /* DeviceExtension.swift */; };
+		01DC4B8B5100560C37BDB9DB50A77A59 /* ImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891FF13C296EC1D631BED89146B806FA /* ImageTransformer.swift */; };
+		035318AD2A504AA1CBE5B5C08A834DD9 /* ImageLoadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B35B3241CB480ADE607B7446FE0D139 /* ImageLoadTask.swift */; };
+		0D77C83D02EB32D30CC09B616B152FE4 /* ImageIOCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9998CED4348CE2F2F8D2FFD8B820174 /* ImageIOCoder.swift */; };
+		0DEC24B9F9FF00382B358CC2396B005D /* ImageWebCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EE6AC1AF06F8F518A776A2A4EE97E8 /* ImageWebCacheable.swift */; };
+		118EEC0A5DEF5558D01A867E70C3D6F3 /* Pods-iosApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DC7F9924F99FEE67A9AD3BEE09A10C /* Pods-iosApp-dummy.m */; };
+		13ACAA9154B9D9B27D7187360102C835 /* ImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E706514C4813E4B588E616E24B09B /* ImageCacher.swift */; };
+		1884702EC51FA96E4D7FD5413AB6DBCA /* CALayer+Longinus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC6C63FC3F31B8A7B8E135CA74F951E /* CALayer+Longinus.swift */; };
+		199C86434A4EE302B5C93DB8907CB6CD /* LinkedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432D3D88118435F91733FB823A3D3930 /* LinkedMap.swift */; };
+		1A110F9CDF47D3FD5FECCEFB487551EB /* UIImageView+Longinus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F29ED01A64036747097BDB7D29DD255 /* UIImageView+Longinus.swift */; };
+		1BD60BB08F3BE451B2DA92902B49112C /* ImageWebCacheResourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF957E4AEF54CFC4CE1EBD1B1CF42A2 /* ImageWebCacheResourceable.swift */; };
+		2D5500B954F52A9EAACD48975437DFDA /* UIButton+Longinus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A453F6407485092790DE43FD6ADF9B /* UIButton+Longinus.swift */; };
+		31336B8BA929326EB4365A3110A875A8 /* AnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C753FA91B805F6C40C5268BADB869B /* AnimatedImage.swift */; };
+		3224FD94AC43C15E3E4517954F8D5B37 /* Cacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E025D31E7EBD41B01E9485F5F3ADE0 /* Cacheable.swift */; };
+		3CA1FBA9A40C2F7E1D345E7451C1EF39 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1613065185ECEB1F6CCFCEF2E53601E4 /* DataExtension.swift */; };
+		3D7D57027A0A7A59E95F01C8DFEFE98D /* NetworkIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F1418C9A8D0C98FE3528C558CE657 /* NetworkIndicatorManager.swift */; };
+		3E5EA50AB4FAE9B14D7251C098D97BE6 /* LonginusPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507C6F47525066F82A0C7746AC6D79A /* LonginusPrint.swift */; };
+		3EF94018E7293D76DDC8FB7799C7120C /* LonginusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812830BC15E78B82E6B67B3960AD00F7 /* LonginusManager.swift */; };
+		414549A48A167056602E412F3BD77B1C /* LonginusCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207390368FDDF308A119A28A402A18F4 /* LonginusCompatible.swift */; };
+		53DCC74CAFBB3AF1606BE4AE128036DE /* MemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCFE5F32E9A9B512CDEE7BEA4123DDB /* MemoryCache.swift */; };
+		553F31C773C3CD40E22C99A517FF5CE2 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A83E78754324A5CBA8429E083739DBA /* ImageDownloader.swift */; };
+		55E24B5F92D88D70CBB5BAE62FBB33EA /* DispatchQueuePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C3C66E376DF50E16AD1A4C51C885F1 /* DispatchQueuePool.swift */; };
+		60622DC9C83C05C4041AFD42D92C3787 /* LonginusWeakProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D50B29755E951276FCFD09AD01DB95 /* LonginusWeakProxy.swift */; };
+		615AC0DF280D93BC456957422E69DA58 /* ImageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3750CBF1B25C4C6F34DF5A0DBB62A5 /* ImageOptions.swift */; };
+		661B3B929C312E362CE91191678A0AF4 /* Longinus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 225E39A802575FF3FE202F122FF1E520 /* Longinus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72E31051C6DD8C488CBCAB806CEC668C /* ImageDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736579B6949C98B6FB7C9C99D879D6B /* ImageDownloadOperation.swift */; };
+		7700B0AE7D82FCC397D88F5CEC459461 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79D8F246DF2989576F955D9FE23D43E /* DispatchQueueExtension.swift */; };
+		77AAE51EC41DB48BC61BE289FB657D7C /* AuthenticationChallengeResponsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1369852F001914BC33796B8CD6A9E1 /* AuthenticationChallengeResponsable.swift */; };
+		7CFA70A7ADD506DB41D58EA24FEB119D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		93984EB818343D70080EB1E1E7BE811F /* DispatchSemaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54E8425F015EA51240BB82D4BB80627 /* DispatchSemaphore.swift */; };
+		985B753C0499059E9C452E40F03ED5D1 /* ImageGIFCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487A74FA2A6C509903DBF1A0140E2107 /* ImageGIFCoder.swift */; };
+		A15E6E7A233160D1B3994B9195A66CA0 /* SQLiteUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FBEAD424355C0B78D29050377C67D5 /* SQLiteUtil.swift */; };
+		A635411929264F45EA0E069D99992D51 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CC1DE8353BCD55440F47564F46769D /* DiskCache.swift */; };
+		AB1ECE34F42B46023C806B7E1938409F /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DCB26F3A6B6054D24DB198D197B1C0 /* Box.swift */; };
+		ADE58B0191A8861A75EFCA786BC5446A /* ImageCoderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483F936953E7C1ED2DBEC91F5470E6D /* ImageCoderManager.swift */; };
+		B8989A57F494A99793280400375ECCA4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F98C981941DE587FB80A3C94468FBF /* Image.swift */; };
+		B9AF8FB9F06ABA22DF20B92E4A88D591 /* ImageDownloadRequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280AB18011D23B98E43F372014A927A /* ImageDownloadRequestModifier.swift */; };
+		C3127FD4D411EA790F6FA07D5807CB86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		C4379A74AD8ED7146753E475D19F3E3B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DB513B36D39D704E9975CD30A21006 /* StringExtension.swift */; };
+		C76FE1CC20CB5AA49C1F3B6F8ED8CA37 /* ImageDownloadSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2B6B51DB5347415FF3C511A1A0FB90 /* ImageDownloadSessionDelegate.swift */; };
+		C88A0CE2E9E2AD69EF8A1AF0885E89B5 /* Pods-iosApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F87A626222A8D9B26448A9FEB04FD0DF /* Pods-iosApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB5B7B49DE71D16870D320D073B0A0D0 /* ImageCodeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428636DC703EB1D785CC58ACC80A341E /* ImageCodeable.swift */; };
+		CB768DAF8E1E9594532FCCC8D9A6508C /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA3BA8F405B077CE29BEE8272EDB0B /* AnimatedImageView.swift */; };
+		D4CB5CEE61A2CAEDB1F067271FA2E80E /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395D4DB3585F7A914C6972571C81E83A /* Runtime.swift */; };
+		DA6DE5963D4AEF758DC597034CCA8728 /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2F1DFF2FE7838A7586368E93701DB3 /* Mutex.swift */; };
+		DA7C48D7DD9E67BDC3F280FBB51163C0 /* ImageDownloadRedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA6C754EF8C13797B4C8C75959E14DF /* ImageDownloadRedirectHandler.swift */; };
+		E2C6ADD7E8D20AA9C467B5CF1A9F8E15 /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52115EE518224EC0545C3229BC2B8C57 /* UnfairLock.swift */; };
+		E3C71A68AF9685593E609E7A7B823FEF /* ImageDownloadOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F7961D564F0722525F752E249E978 /* ImageDownloadOperationQueue.swift */; };
+		E6FA9FEE4F88F7B4A3DFBFED3D05DA1F /* Longinus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1871361F2255371DFBC8E60C3F3DF764 /* Longinus-dummy.m */; };
+		F5B259A76E2EEE6A5AD1AD5908E1E821 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17873EC8EE195FA617825D9BE2670964 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C1E4F2F8101E860063100BCC8448BC3B /* PBXContainerItemProxy */ = {
+		5969F720314209FAFA23B6B607FDCCBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8777C9F6889E59EFFD631D80AEE9048B;
 			remoteInfo = shared;
 		};
+		D5206133919BBF4BE5C2093AA9C9E5BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 470D9BC3F2F4A0D92DD34F2A5F5D8771;
+			remoteInfo = Longinus;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0011AEE22E8296B3D9E0B0B2CDCAB2EE /* Pods-iosApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		1A2FB55B5C37861BC78ECD1420D818C3 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
+		0187F135D5F61750CD24C3E04B6E8B64 /* Pods-iosApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iosApp-frameworks.sh"; sourceTree = "<group>"; };
+		01CC1DE8353BCD55440F47564F46769D /* DiskCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskCache.swift; path = Sources/Cache/DiskCache.swift; sourceTree = "<group>"; };
+		073F7961D564F0722525F752E249E978 /* ImageDownloadOperationQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloadOperationQueue.swift; path = Sources/Networking/ImageDownloadOperationQueue.swift; sourceTree = "<group>"; };
+		09DB513B36D39D704E9975CD30A21006 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Sources/Cache/StringExtension.swift; sourceTree = "<group>"; };
+		0C566D807992BF00E0EE48E5365E31AC /* Longinus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Longinus-prefix.pch"; sourceTree = "<group>"; };
+		1613065185ECEB1F6CCFCEF2E53601E4 /* DataExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataExtension.swift; path = Sources/ImageCode/DataExtension.swift; sourceTree = "<group>"; };
+		1736579B6949C98B6FB7C9C99D879D6B /* ImageDownloadOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloadOperation.swift; path = Sources/Networking/ImageDownloadOperation.swift; sourceTree = "<group>"; };
+		17873EC8EE195FA617825D9BE2670964 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Sources/Utility/UIViewExtension.swift; sourceTree = "<group>"; };
+		1871361F2255371DFBC8E60C3F3DF764 /* Longinus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Longinus-dummy.m"; sourceTree = "<group>"; };
+		18F98C981941DE587FB80A3C94468FBF /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/ImageCode/Image.swift; sourceTree = "<group>"; };
+		1B35B3241CB480ADE607B7446FE0D139 /* ImageLoadTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoadTask.swift; path = Sources/General/ImageLoadTask.swift; sourceTree = "<group>"; };
+		1CCFE5F32E9A9B512CDEE7BEA4123DDB /* MemoryCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryCache.swift; path = Sources/Cache/MemoryCache.swift; sourceTree = "<group>"; };
+		207390368FDDF308A119A28A402A18F4 /* LonginusCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LonginusCompatible.swift; path = Sources/Utility/LonginusCompatible.swift; sourceTree = "<group>"; };
+		225E39A802575FF3FE202F122FF1E520 /* Longinus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Longinus-umbrella.h"; sourceTree = "<group>"; };
+		262E706514C4813E4B588E616E24B09B /* ImageCacher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCacher.swift; path = Sources/General/ImageCacher.swift; sourceTree = "<group>"; };
+		2A83E78754324A5CBA8429E083739DBA /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/Networking/ImageDownloader.swift; sourceTree = "<group>"; };
+		30D50B29755E951276FCFD09AD01DB95 /* LonginusWeakProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LonginusWeakProxy.swift; path = Sources/Utility/LonginusWeakProxy.swift; sourceTree = "<group>"; };
 		35548E3BD8DA30925E8FE97E67B84868 /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
-		3A2475209BEE7612101900020629C625 /* Pods-iosApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iosApp-dummy.m"; sourceTree = "<group>"; };
-		42DE4C0106600A5B6D599285368F3270 /* Pods-iosApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iosApp-umbrella.h"; sourceTree = "<group>"; };
-		482384ADFE4EF692B16FACB8C2021970 /* Pods-iosApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iosApp.modulemap"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		364F1418C9A8D0C98FE3528C558CE657 /* NetworkIndicatorManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkIndicatorManager.swift; path = Sources/Networking/NetworkIndicatorManager.swift; sourceTree = "<group>"; };
+		395D4DB3585F7A914C6972571C81E83A /* Runtime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Runtime.swift; path = Sources/Utility/Runtime.swift; sourceTree = "<group>"; };
+		3B1369852F001914BC33796B8CD6A9E1 /* AuthenticationChallengeResponsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationChallengeResponsable.swift; path = Sources/Networking/AuthenticationChallengeResponsable.swift; sourceTree = "<group>"; };
+		3EDA3BA8F405B077CE29BEE8272EDB0B /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/ImageCode/AnimatedImageView.swift; sourceTree = "<group>"; };
+		3F64BADB16C311E9D09DAD0116F684F4 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		428636DC703EB1D785CC58ACC80A341E /* ImageCodeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCodeable.swift; path = Sources/ImageCode/ImageCodeable.swift; sourceTree = "<group>"; };
+		432D3D88118435F91733FB823A3D3930 /* LinkedMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkedMap.swift; path = Sources/Utility/LinkedMap.swift; sourceTree = "<group>"; };
+		487A74FA2A6C509903DBF1A0140E2107 /* ImageGIFCoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageGIFCoder.swift; path = Sources/ImageCode/ImageGIFCoder.swift; sourceTree = "<group>"; };
+		4F29ED01A64036747097BDB7D29DD255 /* UIImageView+Longinus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Longinus.swift"; path = "Sources/General/UIImageView+Longinus.swift"; sourceTree = "<group>"; };
+		52115EE518224EC0545C3229BC2B8C57 /* UnfairLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnfairLock.swift; path = Sources/Utility/UnfairLock.swift; sourceTree = "<group>"; };
+		52D67D7D7E0CBDE9999E9FF44A588DF6 /* DeviceExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceExtension.swift; path = Sources/Utility/DeviceExtension.swift; sourceTree = "<group>"; };
+		54DC7F9924F99FEE67A9AD3BEE09A10C /* Pods-iosApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iosApp-dummy.m"; sourceTree = "<group>"; };
+		59DCB26F3A6B6054D24DB198D197B1C0 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
+		5AC974169B09D4545F741E9A2147610E /* Pods-iosApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosApp-Info.plist"; sourceTree = "<group>"; };
+		5B4F6E48BE62CFE45878F346EBA5D53D /* Longinus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Longinus.modulemap; sourceTree = "<group>"; };
+		6AC6C63FC3F31B8A7B8E135CA74F951E /* CALayer+Longinus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Longinus.swift"; path = "Sources/General/CALayer+Longinus.swift"; sourceTree = "<group>"; };
 		73D4D08B8C9FAD17B10E8E5C0EB49A76 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
+		7AD6555305DE181628BE35F8280705C4 /* KVStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KVStorage.swift; path = Sources/Cache/KVStorage.swift; sourceTree = "<group>"; };
+		7D2B6B51DB5347415FF3C511A1A0FB90 /* ImageDownloadSessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloadSessionDelegate.swift; path = Sources/Networking/ImageDownloadSessionDelegate.swift; sourceTree = "<group>"; };
+		7DA6C754EF8C13797B4C8C75959E14DF /* ImageDownloadRedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloadRedirectHandler.swift; path = Sources/Networking/ImageDownloadRedirectHandler.swift; sourceTree = "<group>"; };
+		800A7CE67A0655F22EA39A8A3AF3D8A5 /* Longinus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Longinus.release.xcconfig; sourceTree = "<group>"; };
+		812830BC15E78B82E6B67B3960AD00F7 /* LonginusManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LonginusManager.swift; path = Sources/General/LonginusManager.swift; sourceTree = "<group>"; };
+		891FF13C296EC1D631BED89146B806FA /* ImageTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransformer.swift; path = Sources/ImageCode/ImageTransformer.swift; sourceTree = "<group>"; };
+		8B524AABE529FB8A2D151B05321336E0 /* Pods-iosApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iosApp.modulemap"; sourceTree = "<group>"; };
+		93E025D31E7EBD41B01E9485F5F3ADE0 /* Cacheable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cacheable.swift; path = Sources/Cache/Cacheable.swift; sourceTree = "<group>"; };
 		95B09EA82E7AF9ACCCCAF3E55C859116 /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
+		9A3750CBF1B25C4C6F34DF5A0DBB62A5 /* ImageOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageOptions.swift; path = Sources/Networking/ImageOptions.swift; sourceTree = "<group>"; };
+		9BB0B8B698D4C35D4F9A07EF70910170 /* Pods-iosApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C2F1DFF2FE7838A7586368E93701DB3 /* Mutex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mutex.swift; path = Sources/Utility/Mutex.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A43877303056397968EC90C7AAFE17E8 /* Pods-iosApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iosApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A79C2AA5C063914B2D1BD80187FDF6DE /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9F1FFC8B10F4D7D4F37606E8959B3F29 /* Pods-iosApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iosApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9FECCB5AFF87D121F15BA01E683C7932 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
+		A414B72E433A6EDE434F80FF56EA299E /* Longinus */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Longinus; path = Longinus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B097DD7534E741D5C41838011D755842 /* Pods-iosApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-iosApp"; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCAED803D074E2E9C3B1327F049C8C2A /* Pods-iosApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosApp-Info.plist"; sourceTree = "<group>"; };
+		B09A26DAF1BB5A975D03EA66EA953577 /* Longinus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Longinus.debug.xcconfig; sourceTree = "<group>"; };
+		B79D8F246DF2989576F955D9FE23D43E /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchQueueExtension.swift; path = Sources/Utility/DispatchQueueExtension.swift; sourceTree = "<group>"; };
+		C0A453F6407485092790DE43FD6ADF9B /* UIButton+Longinus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Longinus.swift"; path = "Sources/General/UIButton+Longinus.swift"; sourceTree = "<group>"; };
+		C2E242DF195EE0F6649A28F3F28A32C9 /* Longinus-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Longinus-Info.plist"; sourceTree = "<group>"; };
+		C507C6F47525066F82A0C7746AC6D79A /* LonginusPrint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LonginusPrint.swift; path = Sources/Utility/LonginusPrint.swift; sourceTree = "<group>"; };
+		C5EE6AC1AF06F8F518A776A2A4EE97E8 /* ImageWebCacheable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageWebCacheable.swift; path = Sources/General/ImageWebCacheable.swift; sourceTree = "<group>"; };
+		C8C753FA91B805F6C40C5268BADB869B /* AnimatedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImage.swift; path = Sources/ImageCode/AnimatedImage.swift; sourceTree = "<group>"; };
+		CDF957E4AEF54CFC4CE1EBD1B1CF42A2 /* ImageWebCacheResourceable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageWebCacheResourceable.swift; path = Sources/Networking/ImageWebCacheResourceable.swift; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E54E8425F015EA51240BB82D4BB80627 /* DispatchSemaphore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchSemaphore.swift; path = Sources/Utility/DispatchSemaphore.swift; sourceTree = "<group>"; };
+		E9998CED4348CE2F2F8D2FFD8B820174 /* ImageIOCoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageIOCoder.swift; path = Sources/ImageCode/ImageIOCoder.swift; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F1C3C66E376DF50E16AD1A4C51C885F1 /* DispatchQueuePool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchQueuePool.swift; path = Sources/Utility/DispatchQueuePool.swift; sourceTree = "<group>"; };
+		F280AB18011D23B98E43F372014A927A /* ImageDownloadRequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloadRequestModifier.swift; path = Sources/Networking/ImageDownloadRequestModifier.swift; sourceTree = "<group>"; };
+		F483F936953E7C1ED2DBEC91F5470E6D /* ImageCoderManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCoderManager.swift; path = Sources/ImageCode/ImageCoderManager.swift; sourceTree = "<group>"; };
+		F6FBEAD424355C0B78D29050377C67D5 /* SQLiteUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLiteUtil.swift; path = Sources/Utility/SQLiteUtil.swift; sourceTree = "<group>"; };
+		F87A626222A8D9B26448A9FEB04FD0DF /* Pods-iosApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iosApp-umbrella.h"; sourceTree = "<group>"; };
 		FB1BF8BE937671FB0F330C2D28634477 /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC3CD5459C4A5476C5A93268587E63E7 /* Frameworks */ = {
+		445FC8F80BF67267A12431A211A42802 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				648F16425FEF89525AE0325F5A984B86 /* Foundation.framework in Frameworks */,
+				7CFA70A7ADD506DB41D58EA24FEB119D /* Foundation.framework in Frameworks */,
+				C3127FD4D411EA790F6FA07D5807CB86 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80FA315FB97D9A6FFCB3AC72DF65E244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002BB16881EB1D630D220E8A3F2A6F86 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F86AA6785DF34AFD5A71790761717DE /* Products */ = {
+		07201A5C6C25ECF7E2D87A15A1FC08A8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B097DD7534E741D5C41838011D755842 /* Pods-iosApp */,
+				5B4F6E48BE62CFE45878F346EBA5D53D /* Longinus.modulemap */,
+				1871361F2255371DFBC8E60C3F3DF764 /* Longinus-dummy.m */,
+				C2E242DF195EE0F6649A28F3F28A32C9 /* Longinus-Info.plist */,
+				0C566D807992BF00E0EE48E5365E31AC /* Longinus-prefix.pch */,
+				225E39A802575FF3FE202F122FF1E520 /* Longinus-umbrella.h */,
+				B09A26DAF1BB5A975D03EA66EA953577 /* Longinus.debug.xcconfig */,
+				800A7CE67A0655F22EA39A8A3AF3D8A5 /* Longinus.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Longinus";
 			sourceTree = "<group>";
 		};
-		310087C345B86EEF25A054485E0BB5CB /* Pods-iosApp */ = {
+		11C970DEAE48C6D0282DFE54684F53F1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				482384ADFE4EF692B16FACB8C2021970 /* Pods-iosApp.modulemap */,
-				A43877303056397968EC90C7AAFE17E8 /* Pods-iosApp-acknowledgements.markdown */,
-				0011AEE22E8296B3D9E0B0B2CDCAB2EE /* Pods-iosApp-acknowledgements.plist */,
-				3A2475209BEE7612101900020629C625 /* Pods-iosApp-dummy.m */,
-				BCAED803D074E2E9C3B1327F049C8C2A /* Pods-iosApp-Info.plist */,
-				42DE4C0106600A5B6D599285368F3270 /* Pods-iosApp-umbrella.h */,
-				A79C2AA5C063914B2D1BD80187FDF6DE /* Pods-iosApp.debug.xcconfig */,
-				1A2FB55B5C37861BC78ECD1420D818C3 /* Pods-iosApp.release.xcconfig */,
+				52A898E555C2DBD7D25A7E44754C3FC6 /* Pods-iosApp */,
 			);
-			name = "Pods-iosApp";
-			path = "Target Support Files/Pods-iosApp";
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DF126A0B07FD3E5A67B560021CD5892 /* ImageCode */ = {
+			isa = PBXGroup;
+			children = (
+				C8C753FA91B805F6C40C5268BADB869B /* AnimatedImage.swift */,
+				3EDA3BA8F405B077CE29BEE8272EDB0B /* AnimatedImageView.swift */,
+				1613065185ECEB1F6CCFCEF2E53601E4 /* DataExtension.swift */,
+				18F98C981941DE587FB80A3C94468FBF /* Image.swift */,
+				428636DC703EB1D785CC58ACC80A341E /* ImageCodeable.swift */,
+				F483F936953E7C1ED2DBEC91F5470E6D /* ImageCoderManager.swift */,
+				487A74FA2A6C509903DBF1A0140E2107 /* ImageGIFCoder.swift */,
+				E9998CED4348CE2F2F8D2FFD8B820174 /* ImageIOCoder.swift */,
+				891FF13C296EC1D631BED89146B806FA /* ImageTransformer.swift */,
+			);
+			name = ImageCode;
+			sourceTree = "<group>";
+		};
+		2FA94F92AD8ADCE2CB0815AECECC307D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				59DCB26F3A6B6054D24DB198D197B1C0 /* Box.swift */,
+				52D67D7D7E0CBDE9999E9FF44A588DF6 /* DeviceExtension.swift */,
+				B79D8F246DF2989576F955D9FE23D43E /* DispatchQueueExtension.swift */,
+				F1C3C66E376DF50E16AD1A4C51C885F1 /* DispatchQueuePool.swift */,
+				E54E8425F015EA51240BB82D4BB80627 /* DispatchSemaphore.swift */,
+				432D3D88118435F91733FB823A3D3930 /* LinkedMap.swift */,
+				207390368FDDF308A119A28A402A18F4 /* LonginusCompatible.swift */,
+				C507C6F47525066F82A0C7746AC6D79A /* LonginusPrint.swift */,
+				30D50B29755E951276FCFD09AD01DB95 /* LonginusWeakProxy.swift */,
+				9C2F1DFF2FE7838A7586368E93701DB3 /* Mutex.swift */,
+				395D4DB3585F7A914C6972571C81E83A /* Runtime.swift */,
+				F6FBEAD424355C0B78D29050377C67D5 /* SQLiteUtil.swift */,
+				17873EC8EE195FA617825D9BE2670964 /* UIViewExtension.swift */,
+				52115EE518224EC0545C3229BC2B8C57 /* UnfairLock.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		313FE5FE915A4A924C55AAC02A910D61 /* Development Pods */ = {
@@ -97,6 +261,45 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		3AF0294EF0A7032A35BB4934D67389E7 /* Longinus */ = {
+			isa = PBXGroup;
+			children = (
+				6D5D779BB87CBCFA2C0B6280EA40D8D6 /* Cache */,
+				58BBE6274B4859C4093CBFFC0B8FDA0B /* General */,
+				2DF126A0B07FD3E5A67B560021CD5892 /* ImageCode */,
+				A4DF712908700B431A17916EC30C2E35 /* Networking */,
+				07201A5C6C25ECF7E2D87A15A1FC08A8 /* Support Files */,
+				2FA94F92AD8ADCE2CB0815AECECC307D /* Utility */,
+			);
+			name = Longinus;
+			path = Longinus;
+			sourceTree = "<group>";
+		};
+		51895559C82F50A4E420915AC2169D82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AF0294EF0A7032A35BB4934D67389E7 /* Longinus */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52A898E555C2DBD7D25A7E44754C3FC6 /* Pods-iosApp */ = {
+			isa = PBXGroup;
+			children = (
+				8B524AABE529FB8A2D151B05321336E0 /* Pods-iosApp.modulemap */,
+				9F1FFC8B10F4D7D4F37606E8959B3F29 /* Pods-iosApp-acknowledgements.markdown */,
+				9BB0B8B698D4C35D4F9A07EF70910170 /* Pods-iosApp-acknowledgements.plist */,
+				54DC7F9924F99FEE67A9AD3BEE09A10C /* Pods-iosApp-dummy.m */,
+				0187F135D5F61750CD24C3E04B6E8B64 /* Pods-iosApp-frameworks.sh */,
+				5AC974169B09D4545F741E9A2147610E /* Pods-iosApp-Info.plist */,
+				F87A626222A8D9B26448A9FEB04FD0DF /* Pods-iosApp-umbrella.h */,
+				3F64BADB16C311E9D09DAD0116F684F4 /* Pods-iosApp.debug.xcconfig */,
+				9FECCB5AFF87D121F15BA01E683C7932 /* Pods-iosApp.release.xcconfig */,
+			);
+			name = "Pods-iosApp";
+			path = "Target Support Files/Pods-iosApp";
+			sourceTree = "<group>";
+		};
 		569B56E5B05425CAE32676C6049DC8CB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +308,25 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		58BBE6274B4859C4093CBFFC0B8FDA0B /* General */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				6AC6C63FC3F31B8A7B8E135CA74F951E /* CALayer+Longinus.swift */,
+				262E706514C4813E4B588E616E24B09B /* ImageCacher.swift */,
+				1B35B3241CB480ADE607B7446FE0D139 /* ImageLoadTask.swift */,
+				C5EE6AC1AF06F8F518A776A2A4EE97E8 /* ImageWebCacheable.swift */,
+				812830BC15E78B82E6B67B3960AD00F7 /* LonginusManager.swift */,
+				C0A453F6407485092790DE43FD6ADF9B /* UIButton+Longinus.swift */,
+				4F29ED01A64036747097BDB7D29DD255 /* UIImageView+Longinus.swift */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -123,6 +341,18 @@
 			path = "../iosApp/Pods/Target Support Files/shared";
 			sourceTree = "<group>";
 		};
+		6D5D779BB87CBCFA2C0B6280EA40D8D6 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				93E025D31E7EBD41B01E9485F5F3ADE0 /* Cacheable.swift */,
+				01CC1DE8353BCD55440F47564F46769D /* DiskCache.swift */,
+				7AD6555305DE181628BE35F8280705C4 /* KVStorage.swift */,
+				1CCFE5F32E9A9B512CDEE7BEA4123DDB /* MemoryCache.swift */,
+				09DB513B36D39D704E9975CD30A21006 /* StringExtension.swift */,
+			);
+			name = Cache;
+			sourceTree = "<group>";
+		};
 		7DBF81461E18ACE1B4BD971BAC841CF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,12 +361,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C9F6DDEE5D76F65BB478A349731F54F4 /* Targets Support Files */ = {
+		A4DF712908700B431A17916EC30C2E35 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				310087C345B86EEF25A054485E0BB5CB /* Pods-iosApp */,
+				3B1369852F001914BC33796B8CD6A9E1 /* AuthenticationChallengeResponsable.swift */,
+				2A83E78754324A5CBA8429E083739DBA /* ImageDownloader.swift */,
+				1736579B6949C98B6FB7C9C99D879D6B /* ImageDownloadOperation.swift */,
+				073F7961D564F0722525F752E249E978 /* ImageDownloadOperationQueue.swift */,
+				7DA6C754EF8C13797B4C8C75959E14DF /* ImageDownloadRedirectHandler.swift */,
+				F280AB18011D23B98E43F372014A927A /* ImageDownloadRequestModifier.swift */,
+				7D2B6B51DB5347415FF3C511A1A0FB90 /* ImageDownloadSessionDelegate.swift */,
+				9A3750CBF1B25C4C6F34DF5A0DBB62A5 /* ImageOptions.swift */,
+				CDF957E4AEF54CFC4CE1EBD1B1CF42A2 /* ImageWebCacheResourceable.swift */,
+				364F1418C9A8D0C98FE3528C558CE657 /* NetworkIndicatorManager.swift */,
 			);
-			name = "Targets Support Files";
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -144,18 +383,11 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				313FE5FE915A4A924C55AAC02A910D61 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				1F86AA6785DF34AFD5A71790761717DE /* Products */,
-				C9F6DDEE5D76F65BB478A349731F54F4 /* Targets Support Files */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				51895559C82F50A4E420915AC2169D82 /* Pods */,
+				F7598EDD5D2E49D5E901AB1B90B2ACD7 /* Products */,
+				11C970DEAE48C6D0282DFE54684F53F1 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EEF3277DCE2E4B31CF76A57AB68C2BA1 /* shared */ = {
@@ -169,33 +401,69 @@
 			path = ../../shared;
 			sourceTree = "<group>";
 		};
+		F7598EDD5D2E49D5E901AB1B90B2ACD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A414B72E433A6EDE434F80FF56EA299E /* Longinus */,
+				B097DD7534E741D5C41838011D755842 /* Pods-iosApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DA71CB665A4F7860DB550FAA48FB6AD2 /* Headers */ = {
+		B5E07C35374DC4D464917DD415EC9B5B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8801CBFD38B946597BD07145B2EEFC9F /* Pods-iosApp-umbrella.h in Headers */,
+				661B3B929C312E362CE91191678A0AF4 /* Longinus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F92F8747C658FE755D6E3B229FDBA444 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88A0CE2E9E2AD69EF8A1AF0885E89B5 /* Pods-iosApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		ED39C638569286489CD697A6C8964146 /* Pods-iosApp */ = {
+		470D9BC3F2F4A0D92DD34F2A5F5D8771 /* Longinus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F1E85ECB672A0CC96333A6C6DF60EE6 /* Build configuration list for PBXNativeTarget "Pods-iosApp" */;
+			buildConfigurationList = 013E0613A6B169562A0B75A9CA8CFD3B /* Build configuration list for PBXNativeTarget "Longinus" */;
 			buildPhases = (
-				DA71CB665A4F7860DB550FAA48FB6AD2 /* Headers */,
-				EB28A529759E3D2117E28CE3CB8387D3 /* Sources */,
-				CC3CD5459C4A5476C5A93268587E63E7 /* Frameworks */,
-				0EC1C62FF9B25EAB2D236D122EAF4C98 /* Resources */,
+				B5E07C35374DC4D464917DD415EC9B5B /* Headers */,
+				442427F3D704800F1BAF5BF7DE237DBA /* Sources */,
+				445FC8F80BF67267A12431A211A42802 /* Frameworks */,
+				7769ED81A565B8C188C0E97D1295E631 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4A9525469F8E46F3883CC6599FCCFEDB /* PBXTargetDependency */,
+			);
+			name = Longinus;
+			productName = Longinus;
+			productReference = A414B72E433A6EDE434F80FF56EA299E /* Longinus */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED39C638569286489CD697A6C8964146 /* Pods-iosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BF6C7DDBE63AFF775D65E685F990B68 /* Build configuration list for PBXNativeTarget "Pods-iosApp" */;
+			buildPhases = (
+				F92F8747C658FE755D6E3B229FDBA444 /* Headers */,
+				8406E432456B79447AA18C624460DAA0 /* Sources */,
+				80FA315FB97D9A6FFCB3AC72DF65E244 /* Frameworks */,
+				990BA27D346739584F14A98C1CBEBD84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EB18F585E725210CEC654164BF5F8F3 /* PBXTargetDependency */,
+				443825CA21C07B1A16697081EEEADB53 /* PBXTargetDependency */,
 			);
 			name = "Pods-iosApp";
 			productName = Pods_iosApp;
@@ -220,10 +488,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1F86AA6785DF34AFD5A71790761717DE /* Products */;
+			productRefGroup = F7598EDD5D2E49D5E901AB1B90B2ACD7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				470D9BC3F2F4A0D92DD34F2A5F5D8771 /* Longinus */,
 				ED39C638569286489CD697A6C8964146 /* Pods-iosApp */,
 				8777C9F6889E59EFFD631D80AEE9048B /* shared */,
 			);
@@ -231,7 +500,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0EC1C62FF9B25EAB2D236D122EAF4C98 /* Resources */ = {
+		7769ED81A565B8C188C0E97D1295E631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990BA27D346739584F14A98C1CBEBD84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,29 +530,124 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EB28A529759E3D2117E28CE3CB8387D3 /* Sources */ = {
+		442427F3D704800F1BAF5BF7DE237DBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8749C8E8DC500B064FA0BC7A78C38A2A /* Pods-iosApp-dummy.m in Sources */,
+				31336B8BA929326EB4365A3110A875A8 /* AnimatedImage.swift in Sources */,
+				CB768DAF8E1E9594532FCCC8D9A6508C /* AnimatedImageView.swift in Sources */,
+				77AAE51EC41DB48BC61BE289FB657D7C /* AuthenticationChallengeResponsable.swift in Sources */,
+				AB1ECE34F42B46023C806B7E1938409F /* Box.swift in Sources */,
+				3224FD94AC43C15E3E4517954F8D5B37 /* Cacheable.swift in Sources */,
+				1884702EC51FA96E4D7FD5413AB6DBCA /* CALayer+Longinus.swift in Sources */,
+				3CA1FBA9A40C2F7E1D345E7451C1EF39 /* DataExtension.swift in Sources */,
+				00C3BA6E998766F4D4B2C7D576D6BA15 /* DeviceExtension.swift in Sources */,
+				A635411929264F45EA0E069D99992D51 /* DiskCache.swift in Sources */,
+				7700B0AE7D82FCC397D88F5CEC459461 /* DispatchQueueExtension.swift in Sources */,
+				55E24B5F92D88D70CBB5BAE62FBB33EA /* DispatchQueuePool.swift in Sources */,
+				93984EB818343D70080EB1E1E7BE811F /* DispatchSemaphore.swift in Sources */,
+				B8989A57F494A99793280400375ECCA4 /* Image.swift in Sources */,
+				13ACAA9154B9D9B27D7187360102C835 /* ImageCacher.swift in Sources */,
+				CB5B7B49DE71D16870D320D073B0A0D0 /* ImageCodeable.swift in Sources */,
+				ADE58B0191A8861A75EFCA786BC5446A /* ImageCoderManager.swift in Sources */,
+				553F31C773C3CD40E22C99A517FF5CE2 /* ImageDownloader.swift in Sources */,
+				72E31051C6DD8C488CBCAB806CEC668C /* ImageDownloadOperation.swift in Sources */,
+				E3C71A68AF9685593E609E7A7B823FEF /* ImageDownloadOperationQueue.swift in Sources */,
+				DA7C48D7DD9E67BDC3F280FBB51163C0 /* ImageDownloadRedirectHandler.swift in Sources */,
+				B9AF8FB9F06ABA22DF20B92E4A88D591 /* ImageDownloadRequestModifier.swift in Sources */,
+				C76FE1CC20CB5AA49C1F3B6F8ED8CA37 /* ImageDownloadSessionDelegate.swift in Sources */,
+				985B753C0499059E9C452E40F03ED5D1 /* ImageGIFCoder.swift in Sources */,
+				0D77C83D02EB32D30CC09B616B152FE4 /* ImageIOCoder.swift in Sources */,
+				035318AD2A504AA1CBE5B5C08A834DD9 /* ImageLoadTask.swift in Sources */,
+				615AC0DF280D93BC456957422E69DA58 /* ImageOptions.swift in Sources */,
+				01DC4B8B5100560C37BDB9DB50A77A59 /* ImageTransformer.swift in Sources */,
+				0DEC24B9F9FF00382B358CC2396B005D /* ImageWebCacheable.swift in Sources */,
+				1BD60BB08F3BE451B2DA92902B49112C /* ImageWebCacheResourceable.swift in Sources */,
+				007C9A543732751B48478BE901D9C2E6 /* KVStorage.swift in Sources */,
+				199C86434A4EE302B5C93DB8907CB6CD /* LinkedMap.swift in Sources */,
+				E6FA9FEE4F88F7B4A3DFBFED3D05DA1F /* Longinus-dummy.m in Sources */,
+				414549A48A167056602E412F3BD77B1C /* LonginusCompatible.swift in Sources */,
+				3EF94018E7293D76DDC8FB7799C7120C /* LonginusManager.swift in Sources */,
+				3E5EA50AB4FAE9B14D7251C098D97BE6 /* LonginusPrint.swift in Sources */,
+				60622DC9C83C05C4041AFD42D92C3787 /* LonginusWeakProxy.swift in Sources */,
+				53DCC74CAFBB3AF1606BE4AE128036DE /* MemoryCache.swift in Sources */,
+				DA6DE5963D4AEF758DC597034CCA8728 /* Mutex.swift in Sources */,
+				3D7D57027A0A7A59E95F01C8DFEFE98D /* NetworkIndicatorManager.swift in Sources */,
+				D4CB5CEE61A2CAEDB1F067271FA2E80E /* Runtime.swift in Sources */,
+				A15E6E7A233160D1B3994B9195A66CA0 /* SQLiteUtil.swift in Sources */,
+				C4379A74AD8ED7146753E475D19F3E3B /* StringExtension.swift in Sources */,
+				2D5500B954F52A9EAACD48975437DFDA /* UIButton+Longinus.swift in Sources */,
+				1A110F9CDF47D3FD5FECCEFB487551EB /* UIImageView+Longinus.swift in Sources */,
+				F5B259A76E2EEE6A5AD1AD5908E1E821 /* UIViewExtension.swift in Sources */,
+				E2C6ADD7E8D20AA9C467B5CF1A9F8E15 /* UnfairLock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8406E432456B79447AA18C624460DAA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118EEC0A5DEF5558D01A867E70C3D6F3 /* Pods-iosApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4A9525469F8E46F3883CC6599FCCFEDB /* PBXTargetDependency */ = {
+		1EB18F585E725210CEC654164BF5F8F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Longinus;
+			target = 470D9BC3F2F4A0D92DD34F2A5F5D8771 /* Longinus */;
+			targetProxy = D5206133919BBF4BE5C2093AA9C9E5BF /* PBXContainerItemProxy */;
+		};
+		443825CA21C07B1A16697081EEEADB53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = shared;
 			target = 8777C9F6889E59EFFD631D80AEE9048B /* shared */;
-			targetProxy = C1E4F2F8101E860063100BCC8448BC3B /* PBXContainerItemProxy */;
+			targetProxy = 5969F720314209FAFA23B6B607FDCCBE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02DDCCED053337F381DEBAFDEC6F354F /* Release */ = {
+		01900A61EA3045B6F161F0D50A8F5C61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A2FB55B5C37861BC78ECD1420D818C3 /* Pods-iosApp.release.xcconfig */;
+			baseConfigurationReference = 800A7CE67A0655F22EA39A8A3AF3D8A5 /* Longinus.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Longinus/Longinus-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Longinus/Longinus-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Longinus/Longinus.modulemap";
+				PRODUCT_MODULE_NAME = Longinus;
+				PRODUCT_NAME = Longinus;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1B1A363381A7F1E746AC29DC6588E127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FECCB5AFF87D121F15BA01E683C7932 /* Pods-iosApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -312,6 +683,41 @@
 			};
 			name = Release;
 		};
+		421E24209DF951381A20460E5F3D73AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B09A26DAF1BB5A975D03EA66EA953577 /* Longinus.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Longinus/Longinus-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Longinus/Longinus-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Longinus/Longinus.modulemap";
+				PRODUCT_MODULE_NAME = Longinus;
+				PRODUCT_NAME = Longinus;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5789EB93299526783682C12EB2881CDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35548E3BD8DA30925E8FE97E67B84868 /* shared.release.xcconfig */;
@@ -329,6 +735,43 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		58E71605ABCABE2AAAD2EE67D4499AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F64BADB16C311E9D09DAD0116F684F4 /* Pods-iosApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -458,43 +901,6 @@
 			};
 			name = Debug;
 		};
-		AF088B6CD92A52AC4DCB62DEEC871231 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A79C2AA5C063914B2D1BD80187FDF6DE /* Pods-iosApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		BF4CF120EB81BB6BACB4935B02205054 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95B09EA82E7AF9ACCCCAF3E55C859116 /* shared.debug.xcconfig */;
@@ -515,20 +921,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		013E0613A6B169562A0B75A9CA8CFD3B /* Build configuration list for PBXNativeTarget "Longinus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421E24209DF951381A20460E5F3D73AE /* Debug */,
+				01900A61EA3045B6F161F0D50A8F5C61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BF6C7DDBE63AFF775D65E685F990B68 /* Build configuration list for PBXNativeTarget "Pods-iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58E71605ABCABE2AAAD2EE67D4499AEA /* Debug */,
+				1B1A363381A7F1E746AC29DC6588E127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */,
 				593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F1E85ECB672A0CC96333A6C6DF60EE6 /* Build configuration list for PBXNativeTarget "Pods-iosApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF088B6CD92A52AC4DCB62DEEC871231 /* Debug */,
-				02DDCCED053337F381DEBAFDEC6F354F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

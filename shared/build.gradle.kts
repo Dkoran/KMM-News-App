@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 val ktor_version = "1.6.4"
-val coroutineVersion = "1.5.2"
+val coroutineVersion = "1.5.2-native-mt"
 
 plugins {
     kotlin("multiplatform")
@@ -25,8 +25,9 @@ kotlin {
 
     cocoapods {
         summary = "Some description for the Shared Module"
-        homepage = "Link to the Shared Module homepage"
+        homepage = "https://github.com/Kotlin/kotlin-with-cocoapods-sample"
         ios.deploymentTarget = "14.1"
+
         frameworkName = "shared"
         podfile = project.file("../iosApp/Podfile")
     }

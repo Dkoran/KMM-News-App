@@ -1,16 +1,34 @@
 PODS:
+  - Longinus (1.1.17):
+    - Longinus/General (= 1.1.17)
+  - Longinus/Cache (1.1.17):
+    - Longinus/Utility
+  - Longinus/General (1.1.17):
+    - Longinus/Networking
+  - Longinus/ImageCode (1.1.17):
+    - Longinus/Utility
+  - Longinus/Networking (1.1.17):
+    - Longinus/Cache
+    - Longinus/ImageCode
+  - Longinus/Utility (1.1.17)
   - shared (1.0)
 
 DEPENDENCIES:
+  - Longinus
   - shared (from `../shared`)
+
+SPEC REPOS:
+  trunk:
+    - Longinus
 
 EXTERNAL SOURCES:
   shared:
     :path: "../shared"
 
 SPEC CHECKSUMS:
-  shared: 7e5bb3963fe6bd4de6f2c4da301b5f6251f84201
+  Longinus: 55f4938698f725f9e1fc8ecfa0992f53af0c2316
+  shared: c5c9d7784953c9de42e37375539fbbdbb9c11a38
 
-PODFILE CHECKSUM: f282da88f39e69507b0a255187c8a6b644477756
+PODFILE CHECKSUM: 47d64a30bfe2f3b037c69382a6fde310efbcd50a
 
 COCOAPODS: 1.11.2
