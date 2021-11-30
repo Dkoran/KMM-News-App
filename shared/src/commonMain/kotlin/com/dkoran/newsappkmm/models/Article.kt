@@ -15,7 +15,7 @@ data class Article(
     @SerialName("publishedAt")
     val publishedAt: String? = null,
     @SerialName("source")
-    val source: Source? = null,
+    var source: Source? = null,
     @SerialName("title")
     val title: String? = null,
     @SerialName("url")
@@ -23,3 +23,15 @@ data class Article(
     @SerialName("urlToImage")
     val urlToImage: String? = null
 )
+fun Article.toRealmArticle(): ArticleRealmDB {
+    return ArticleRealmDB().apply {
+        author = this@toRealmArticle.author
+        content = this@toRealmArticle.content
+        description = this@toRealmArticle.description
+        publishedAt = this@toRealmArticle.publishedAt
+        url = this@toRealmArticle.url
+        urlToImage = this@toRealmArticle.urlToImage
+
+    }
+
+}

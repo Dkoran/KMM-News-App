@@ -7,8 +7,10 @@ import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import com.dkoran.newsappkmm.android.MainActivity
 import com.dkoran.newsappkmm.android.R
 import com.dkoran.newsappkmm.android.adapters.NewsAdapter
+import com.dkoran.newsappkmm.android.viewmodel.NewsViewModel
 import com.dkoran.newsappkmm.network.NewsApi
 import kotlinx.android.synthetic.main.fragment_search_news.*
 import kotlinx.coroutines.Job
@@ -19,14 +21,13 @@ import kotlinx.coroutines.launch
 
 class SearchNewsFragment : Fragment (R.layout.fragment_search_news) {
     lateinit var searchAdapter : NewsAdapter
-    private val newsApi = NewsApi()
+    lateinit var viewModel : NewsViewModel
      val SEARCH_NEWS_TIME_DELAY = 500L
-
-
-    var job: Job? = null
+      var job: Job? = null
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        viewModel = (activity as MainActivity).viewModel
         setUpRecyclerView()
         ed_Search.addTextChangedListener {edSearch->
             job?.cancel()
@@ -34,16 +35,17 @@ class SearchNewsFragment : Fragment (R.layout.fragment_search_news) {
                 delay(SEARCH_NEWS_TIME_DELAY)
                 edSearch?.let {
                     if (edSearch.toString().isNotEmpty()){
-                        Log.e("Response 2: ","Rs")
 
                         kotlin.runCatching {
-                            newsApi.searchNews("us",edSearch.toString())
+                            viewModel.search(edSearch.toString())
                         }.onSuccess {
-                            Log.e("Response Data: ","Rs")
-
+                            Log.e("Success: ","Called.")
                             hideProgress()
                             Log.e("Response: ",it.toString())
-                            searchAdapter.differ.submitList(it.articles)
+                            viewModel.searchNews.observe(viewLifecycleOwner, Observer{ data ->
+                                searchAdapter.differ.submitList(data.articles)
+
+                            })
 
                         }.onFailure {
                             Log.e("Response Error: ","Rs")
@@ -60,26 +62,6 @@ class SearchNewsFragment : Fragment (R.layout.fragment_search_news) {
             }
 
         }
-//        viewModel.searchNews.observe(viewLifecycleOwner, Observer {response ->
-//            when(response){
-//                is Resource.Success ->{
-//                    hideProgress()
-//                    response.data?.let {newsResponse->
-//                        searchAdapter.differ.submitList(newsResponse.articles)
-//                    }
-//                }
-//                is Resource.Error ->{
-//                    hideProgress()
-//                    response.message?.let { message ->
-//                        Log.e("Error",message)
-//                    }
-//                }
-//                is Resource.Loading ->{
-//                    showProgress()
-//                }
-//            }
-//
-//        })
 
     }
     private fun setUpRecyclerView(){

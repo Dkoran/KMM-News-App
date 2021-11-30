@@ -3,21 +3,30 @@ package com.dkoran.newsappkmm.android.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
+import com.dkoran.newsappkmm.android.MainActivity
 import com.dkoran.newsappkmm.android.R
+import com.dkoran.newsappkmm.android.adapters.TodoAdapter
+import com.dkoran.newsappkmm.android.viewmodel.NewsViewModel
 import com.dkoran.newsappkmm.models.Article
+import com.dkoran.newsappkmm.models.ArticleRealmDB
+import kotlinx.android.synthetic.main.fragment_favorite_news.*
 
 
 class FavoriteNewsFragment :Fragment (R.layout.fragment_favorite_news) {
-//    lateinit var viewModel :NewsViewModel
-//    lateinit var newsAdapter: NewsAdapter
+    lateinit var viewModel : NewsViewModel
+    lateinit var newsAdapter: TodoAdapter
+    private  var todolist = ArrayList<ArticleRealmDB>()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-       // viewModel =(activity as NewsActivity).viewmodel
+        viewModel =(activity as MainActivity).viewModel
+
+
+
+
+
 
         setupRecyclerView()
 
@@ -50,13 +59,13 @@ class FavoriteNewsFragment :Fragment (R.layout.fragment_favorite_news) {
            // attachToRecyclerView(recyclerViewFavoriteNews)
         }
 
-//        viewModel.getSavedNews().observe(viewLifecycleOwner, Observer { articles ->
-//            newsAdapter.differ.submitList(articles)
-//        })
+
+          //  newsAdapter.differ.submitList(article)
+
     }
 
     private fun setupRecyclerView() {
-//        newsAdapter = NewsAdapter{data ->clickedArticle(data)}
+//        newsAdapter =TodoAdapter(context, viewModel.getSavedArticle())
 //        recyclerViewFavoriteNews.apply {
 //            adapter = newsAdapter
 //        }

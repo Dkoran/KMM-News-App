@@ -1,12 +1,14 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 val ktor_version = "1.6.4"
+val realm_version = "0.6.0"
 val coroutineVersion = "1.5.2-native-mt"
 
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    id("io.realm.kotlin") version "0.6.0"
     kotlin("plugin.serialization") version "1.5.31"
 }
 
@@ -40,6 +42,7 @@ kotlin {
                 implementation("io.ktor:ktor-client-serialization:$ktor_version")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2")
+                implementation("io.realm.kotlin:library-base:$realm_version")
             }
         }
         val commonTest by getting {

@@ -31,11 +31,8 @@ class NewsApi {
 
     }
 
-    suspend fun searchNews(country:String,search:String) : NewsData{
-        val url = URLBuilder(BASE_URL).run {
-            path(Search_Path)
-            parameters.append("q",search)
-            parameters.append("country",country)
+    suspend fun searchNews(search:String) : NewsData{
+        val url = URLBuilder(BASE_URL+ Search_Path + search).run {
             parameters.append("apiKey",API_KEY)
             buildString()
         }
